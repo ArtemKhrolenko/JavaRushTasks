@@ -18,6 +18,5 @@ public class Solution {
         System.out.println("Меня зовут " + name + ".");
         System.out.println("Я родился " + dd + "." + mm + "." + yy);
 
-
     }
 }
