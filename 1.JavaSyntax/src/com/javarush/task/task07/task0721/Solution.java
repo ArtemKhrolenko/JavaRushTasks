@@ -16,11 +16,19 @@ public class Solution {
         int minimum;
 
         int[] array = new int[20];
-//        for (int i = 0; i < array.length; i++){
-//            array[i] = Integer.parseInt()
-//        }
+        for (int i = 0; i < array.length; i++){
+            array[i] = Integer.parseInt(reader.readLine());
+        }
 
-        //System.out.println(maximum);
-       // System.out.println(minimum);
+        maximum = array[0];
+        minimum = array[0];
+
+        for (int i = 1; i < array.length; i++){
+            if (maximum < array[i]) maximum = array[i];
+            if (minimum > array[i]) minimum = array[i];
+        }
+
+        System.out.println(maximum + " " + minimum);
+
     }
 }
